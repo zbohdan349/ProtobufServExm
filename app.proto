@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package myapp;
+
+message Order {
+  string id = 1;
+  int32 userId = 2;
+  string subjectId = 3;
+}
+
+message ServerError {
+  int32 code = 1;
+  string message = 2;
+}
